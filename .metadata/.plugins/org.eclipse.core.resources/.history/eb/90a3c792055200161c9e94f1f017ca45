@@ -1,0 +1,43 @@
+package IntroToSanner;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class IntroToScanner {
+	
+	Scanner keyboard = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		new IntroToScanner();
+	}
+	
+	IntroToScanner(){
+		ArrayList<String> userWords = new ArrayList<String>();
+		String input = "";
+		boolean tof = true;
+		
+		while(tof == true){
+			input = keyboard.next();
+			if(input.equals("0")){
+				tof = false;
+			}
+			userWords.add(input);
+		}
+		
+		userWords = sortWords(userWords);
+		System.out.println(userWords);
+	}
+	
+	public ArrayList<String> sortWords(ArrayList<String> userWords){
+		for(int i = 1; i < userWords.size() - 1; i++){
+			String temp = "";
+			if(userWords.get(i - 1).compareTo(userWords.get(i)) > 0){
+				temp = userWords.get(i - 1);
+				userWords.add(i - 1, userWords.get(i));
+				userWords.add(i, temp);
+			}
+		}
+		return userWords;
+	}
+
+}
