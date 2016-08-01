@@ -1,0 +1,10 @@
+package arrayManipulation;
+
+public class Inserting {
+	public int[] insertAt(int[] userWords, int pos, int value){
+		for(int i = pos; i < userWords.length - 1; i++){
+			
+		}
+		return userWords;
+	}
+}
