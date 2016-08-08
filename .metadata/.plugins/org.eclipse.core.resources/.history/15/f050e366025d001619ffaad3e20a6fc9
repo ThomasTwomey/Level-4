@@ -1,0 +1,88 @@
+package arrayManipulation;
+
+// Copyright Wintriss Technical Schools 2013
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class EasyConstructorQuiz {
+
+	@Test
+	public void testBasicConstruction() {
+		Person vic = new Person("vic wintriss", 81);
+		assertEquals("vic", vic.getFirstName());
+		assertEquals("wintriss", vic.getLastName());
+		assertEquals(81, vic.getAge());
+	}
+
+	/*
+	@Test
+	public void testConstruction1() {
+		Superhero ironMan = new Superhero("iron man", "armor");
+		assertEquals("iron man", ironMan.getName());
+		assertEquals("armor", ironMan.getSuperpower());
+
+		Superhero hulk = new Superhero("incredible hulk", "strength");
+		assertEquals("incredible hulk", hulk.getName());
+		assertEquals("strength", hulk.getSuperpower());
+	}
+
+	@Test
+	//Make a new class called Character and make Superhero extend it
+	public void testConstruction2() {
+		Character darthVadar = new Character("darth vader", true);
+		assertEquals("darth vader", darthVadar.getName());
+		assertEquals(true, darthVadar.isEvil());
+	}
+
+	@Test
+	public void testConstruction3() throws Exception {
+		Superhero lukeSkywalker = new Superhero("luke skywalker",
+				"jedi mind tricks", false);
+		assertEquals("luke skywalker", lukeSkywalker.getName());
+		assertEquals("jedi mind tricks", lukeSkywalker.getSuperpower());
+		assertEquals(false, lukeSkywalker.isEvil());
+	}
+	*/
+	
+
+}
+
+class Person{
+	String name;
+	int age;
+	
+	Person(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	public int getAge(){
+		return age;
+	}
+	
+	public String getFirstName(){
+		String temp = "";
+		for(int i = 0; i < name.length() - 1; i++){
+			if(temp.charAt(i) == ' '){
+				break;
+			}
+			temp += name.charAt(i);
+		}
+		return temp;
+	}
+	
+	public String getLastName(){
+		String temp = "";
+		int startPos = 0;
+		for(int i = 0; i < name.length() - 1; i++){
+			if(name.charAt(i) == ' '){
+				startPos = i + 1;
+			}
+		}
+		for(int i = startPos; i < name.length(); i++){
+			temp += name.charAt(i);
+		}
+		return temp;
+	}
+	
+}

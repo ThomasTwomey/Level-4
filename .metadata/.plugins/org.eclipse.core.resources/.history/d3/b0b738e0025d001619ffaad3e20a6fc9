@@ -1,0 +1,10 @@
+package basicConstructors;
+
+public class Superhero extends Person {
+
+	Superhero(String name, int age) {
+		super(name, age);
+		
+	}
+	
+}

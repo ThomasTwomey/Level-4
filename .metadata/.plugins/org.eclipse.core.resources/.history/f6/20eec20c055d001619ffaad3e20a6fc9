@@ -1,0 +1,21 @@
+package basicConstructors;
+
+public class Superhero extends Character{
+	String name;
+	String superpower;
+	
+	Superhero(String name, String superpower) {
+		super(name, false);
+		this.name = name;
+		this.superpower = superpower;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public String getSuperpower(){
+		return superpower;
+	}
+	
+}

@@ -1,8 +1,0 @@
-package arrayManipulation;
-
-public class Inserting {
-	public String[] insertAt(int[] userWords, int pos, int value){
-		
-		return userWords;
-	}
-}

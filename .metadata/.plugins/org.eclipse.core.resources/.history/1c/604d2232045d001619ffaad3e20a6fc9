@@ -1,0 +1,16 @@
+package basicConstructors;
+
+public class Character{
+	boolean isEvil;
+	
+	Character(String name, String superpower, boolean isEvil) {
+		this.isEvil = isEvil;
+	}
+	
+	Character(String name, boolean isEvil) {
+		this.isEvil = isEvil;
+	}
+	
+	
+	
+}

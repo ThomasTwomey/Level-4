@@ -1,0 +1,12 @@
+package basicConstructors;
+
+public class Character{
+	boolean isEvil;
+	
+	Character(String name, boolean isEvil) {
+		this.isEvil = isEvil;
+	}
+	
+	
+	
+}

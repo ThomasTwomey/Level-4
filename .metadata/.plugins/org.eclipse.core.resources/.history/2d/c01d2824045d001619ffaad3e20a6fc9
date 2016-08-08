@@ -1,0 +1,18 @@
+package basicConstructors;
+
+public class Character extends Superhero{
+	boolean isEvil;
+	
+	Character(String name, String superpower, boolean isEvil) {
+		super(name, superpower);
+		this.isEvil = isEvil;
+	}
+	
+	Character(String name, boolean isEvil) {
+		super(name, superpower);
+		this.isEvil = isEvil;
+	}
+	
+	
+	
+}
