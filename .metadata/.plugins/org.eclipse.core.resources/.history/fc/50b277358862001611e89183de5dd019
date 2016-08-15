@@ -1,0 +1,13 @@
+package HumansAndVampires;
+
+public class HumansAndVampires {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Person{
+	
+}

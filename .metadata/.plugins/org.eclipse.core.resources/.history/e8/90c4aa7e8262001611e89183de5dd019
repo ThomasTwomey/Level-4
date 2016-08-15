@@ -1,0 +1,16 @@
+package StringPractice;
+
+public class StringPractice implements Runnable{
+
+	public static void main(String[] args) {
+		new Thread(new StringPractice()).start();
+
+	}
+
+	@Override
+	public void run() {
+		StringBuilder stringBuilder = new StringBuilder("java");
+		System.out.println("1: " + stringBuilder.deleteCharAt(1));
+	}
+
+}

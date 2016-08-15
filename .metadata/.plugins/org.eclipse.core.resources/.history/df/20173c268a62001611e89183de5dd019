@@ -1,0 +1,55 @@
+package HumansAndVampires;
+
+import java.util.ArrayList;
+
+public class HumansAndVampires {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Person{
+	private String name;
+	private int age;
+	
+	public Person(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public int getAge(){
+		return age;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public void setAge(int age){
+		this.age = age;
+	}
+}
+
+class Demographics{
+	ArrayList<Person> list;
+	
+	public Demographics(ArrayList<Person> list){
+		this.list = list;
+	}
+	
+	public int getAverageAge(){
+		int total = 0;
+		int num = 0;
+		for(Person p: list){
+			total += p.getAge();
+			num++;
+		}
+		return total / num;
+	}
+}

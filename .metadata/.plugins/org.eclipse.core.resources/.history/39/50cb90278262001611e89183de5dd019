@@ -1,0 +1,16 @@
+package StringBuilder;
+
+public class StringBuilder implements Runnable{
+
+	public static void main(String[] args) {
+		new Thread(new StringBuilder()).start();
+
+	}
+
+	@Override
+	public void run() {
+		System.out.println("Run");
+		
+	}
+
+}
