@@ -1,0 +1,39 @@
+package Polymorphism;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Polymorph {
+    private int x;
+    private int y;
+    
+    Polymorph(int x, int y){
+   	 this.setX(x);
+   	 this.setY(y);
+    }
+    
+    public void update(){
+   	 
+    }
+    
+    public void draw(Graphics g){
+   	 g.setColor(Color.BLUE);
+   	 g.fillRect(getX(), getY(), 10, 10);
+    }
+
+	int getX() {
+		return x;
+	}
+
+	void setX(int x) {
+		this.x = x;
+	}
+
+	int getY() {
+		return y;
+	}
+
+	void setY(int y) {
+		this.y = y;
+	}
+}

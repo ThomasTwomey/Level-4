@@ -1,0 +1,10 @@
+package Polymorphism;
+
+public class MovingMorph extends Polymorph{
+
+	MovingMorph(int x, int y, int width, int height) {
+		super(x, y, width, height);
+		
+	}
+	
+}

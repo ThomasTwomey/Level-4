@@ -1,0 +1,32 @@
+package Polymorphism;
+
+import java.util.Random;
+
+public class CircleMorph extends Polymorph{
+	private int radius;
+
+	CircleMorph(int x, int y, int width, int height, int radius) {
+		super(x, y, width, height);
+		this.setRadius(radius);
+	}
+	
+	public int getRadius() {
+		return radius;
+	}
+
+
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+
+
+
+	@Override
+	public void update(){
+	    int randX = (int) Math.cos(radius);
+	    int randY = (int) Math.sin(radius);
+	    this.setX(randX);
+	    this.setY(randY);
+	}
+	
+}

@@ -1,0 +1,20 @@
+package Polymorphism;
+
+import java.util.Random;
+
+public class MovingMorph extends Polymorph{
+
+	MovingMorph(int x, int y, int width, int height) {
+		super(x, y, width, height);
+		
+	}
+	
+	@Override
+	public void update(){
+		int xPos = getX();
+		int yPos = getY();
+		setX(xPos++);
+		setY(yPos++);
+	}
+	
+}
