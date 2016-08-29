@@ -1,0 +1,45 @@
+package FileEncryptorUnitTests;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileEncryptor {
+	public static File openSecretFile(){
+			File file = new File("/Users/league/Desktop/Level-4/Level-4/src/FileEncryptorUnitTests/file");
+			return file;
+	}
+	public boolean isFile(){
+		return true;
+	}
+	public static String readOneLine(File file){
+		String x = "";
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			x = br.readLine();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return x;
+	}
+	public static String readFileContents(File file){
+		String x = "";
+		String line = "";
+		BufferedReader br = null;
+		try{
+			br = new BufferedReader(new FileReader(file));
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		while(line != null){
+			try {
+				line = br.readLine();
+				x += br.readLine();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return x;
+	}
+}

@@ -1,0 +1,10 @@
+package FileEncryptorUnitTests;
+
+public class FileEncryptor {
+	public void openSecretFile(){
+			
+	}
+	public boolean isFile(){
+		return true;
+	}
+}

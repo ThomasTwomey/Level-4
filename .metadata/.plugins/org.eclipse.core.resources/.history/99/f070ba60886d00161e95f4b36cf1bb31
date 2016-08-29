@@ -1,0 +1,13 @@
+package FileEncryptorUnitTests;
+
+import java.io.File;
+
+public class FileEncryptor {
+	public static File openSecretFile(){
+			File file = new File("/Level-4/src/FileEncryptorUnitTests/file");
+			return file;
+	}
+	public boolean isFile(){
+		return true;
+	}
+}

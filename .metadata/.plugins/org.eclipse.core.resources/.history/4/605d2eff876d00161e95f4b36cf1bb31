@@ -1,0 +1,7 @@
+package FileEncryptorUnitTests;
+
+public class FileEncryptor {
+	public void openSecretFile(){
+			
+		}
+}

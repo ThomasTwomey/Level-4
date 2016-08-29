@@ -1,0 +1,6 @@
+
+public class FileEncryptor {
+	public void openSecretFile(){
+			
+		}
+}

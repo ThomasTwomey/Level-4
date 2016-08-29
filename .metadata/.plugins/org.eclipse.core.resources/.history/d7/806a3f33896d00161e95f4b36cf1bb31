@@ -1,0 +1,16 @@
+package FileEncryptorUnitTests;
+
+import java.io.File;
+
+public class FileEncryptor {
+	public static File openSecretFile(){
+			File file = new File("/Users/league/Desktop/Level-4/Level-4/src/FileEncryptorUnitTests/file");
+			return file;
+	}
+	public boolean isFile(){
+		return true;
+	}
+	public static String readOneLine(File file){
+		return "";
+	}
+}
