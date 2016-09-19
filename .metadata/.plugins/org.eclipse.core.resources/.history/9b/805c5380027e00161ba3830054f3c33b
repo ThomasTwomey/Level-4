@@ -1,0 +1,21 @@
+package Hospital;
+
+public class Patient{
+	boolean feelsCaredFor;
+	
+	public Patient(){
+		feelsCaredFor = false;
+	}
+	
+	public void checkPulse(){
+		feelsCaredFor = true;
+	}
+
+	public boolean feelsCaredFor() {
+		return feelsCaredFor;
+	}
+
+	public void setFeelsCaredFor(boolean feelsCaredFor) {
+		this.feelsCaredFor = feelsCaredFor;
+	}
+}
