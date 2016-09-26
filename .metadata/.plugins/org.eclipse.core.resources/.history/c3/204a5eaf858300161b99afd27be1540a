@@ -1,0 +1,22 @@
+package BankAccount;
+
+import java.util.ArrayList;
+
+public class Bank {
+	private ArrayList<Account> accounts;
+	
+	public void addAccount(Account account, int accountNum){
+		account.setAccountNum(accountNum);
+		accounts.add(account);
+	}
+	
+	public void removeAccount(int accountNum){
+		
+	}
+	public void addMoney(int accountNum, float amount){
+		
+	}
+	public void widthdrawMoney(int accountNum, float amount){
+		
+	}
+}

@@ -1,0 +1,13 @@
+package BankAccount;
+
+public class Account {
+	private float balance;
+	private int accountNum;
+	
+	public void addMoney(float amount){
+		
+	}
+	public void widthdrawMoney(float amount){
+		
+	}
+}

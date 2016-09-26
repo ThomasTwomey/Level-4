@@ -1,0 +1,27 @@
+package BankAccount;
+
+public class Account {
+	private float balance;
+	private int accountNum;
+	
+	public float getBalance() {
+		return balance;
+	}
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+	public int getAccountNum() {
+		return accountNum;
+	}
+	public void setAccountNum(int accountNum) {
+		this.accountNum = accountNum;
+	}
+	public void addMoney(float amount){
+		
+	}
+	public void widthdrawMoney(float amount){
+		if(balance - amount < 0){
+			throw AccountOverdrawnException();
+		}
+	}
+}

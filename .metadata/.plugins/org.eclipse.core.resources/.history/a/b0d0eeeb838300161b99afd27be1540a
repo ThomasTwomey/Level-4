@@ -1,0 +1,11 @@
+package BankAccount;
+
+import java.util.ArrayList;
+
+public class Bank {
+	private ArrayList<Account> accounts;
+	
+	public void addAccount(Account account, int accountNum){
+		accounts.add(account);
+	}
+}

@@ -1,9 +1,0 @@
-package Hospital;
-
-public class Zombie {
-	private String timeOfDeath;
-	
-	public Zombie(String timeOfDeath){
-		this.timeOfDeath = timeOfDeath;
-	}
-}
