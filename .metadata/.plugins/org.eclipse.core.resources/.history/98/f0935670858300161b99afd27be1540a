@@ -1,7 +1,0 @@
-package BankAccount;
-
-public class NonExistantAccountException extends Exception{
-	public NonExistantAccountException(){
-		
-	}
-}

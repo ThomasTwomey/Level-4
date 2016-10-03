@@ -1,0 +1,6 @@
+package ShapeUML;
+
+public class EquilateralTriangle {
+	private float base;
+	private float height;
+}

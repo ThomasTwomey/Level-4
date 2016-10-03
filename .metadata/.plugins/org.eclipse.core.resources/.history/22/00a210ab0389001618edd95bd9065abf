@@ -1,0 +1,8 @@
+package ShapeUML;
+
+public class Ellipse extends Shape2D{
+	private float majorRadius;
+	private float minorRadius;
+	
+	
+}

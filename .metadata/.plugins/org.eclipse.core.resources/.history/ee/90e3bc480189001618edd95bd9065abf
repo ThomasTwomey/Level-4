@@ -1,0 +1,5 @@
+package ShapeUML;
+
+public abstract class Shape {
+
+}

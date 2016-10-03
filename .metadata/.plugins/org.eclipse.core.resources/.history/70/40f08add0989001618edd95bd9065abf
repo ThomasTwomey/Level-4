@@ -1,0 +1,9 @@
+package ShapeUML;
+
+public class EqTriPyramid extends Shape3D{
+	private float sideLength;
+	
+	public EqTriPyramid(float sideLength){
+		this.sideLength = sideLength;
+	}
+}

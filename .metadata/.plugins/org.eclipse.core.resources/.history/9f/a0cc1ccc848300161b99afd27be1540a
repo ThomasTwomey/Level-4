@@ -1,7 +1,0 @@
-package BankAccount;
-
-public class AccountOverdrawnException extends Exception{
-	public AccountOverdrawnException(){
-		super()
-	}
-}

@@ -1,0 +1,9 @@
+package ShapeUML;
+
+public abstract class Shape {
+	private float area;
+	
+	public float getArea(){
+		return area;
+	}
+}

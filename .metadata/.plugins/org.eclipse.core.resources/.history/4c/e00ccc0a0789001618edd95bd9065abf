@@ -1,0 +1,6 @@
+package ShapeUML;
+
+public abstract class Shape3D extends Shape{
+	protected float surfaceArea;
+	
+}
