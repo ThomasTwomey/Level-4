@@ -1,8 +1,0 @@
-
-public abstract class Shape2D {
-	private float perimeter;
-	
-	public float getPerimeter(){
-		return perimeter;
-	}
-}
