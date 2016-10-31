@@ -1,0 +1,6 @@
+package InterfacePractice;
+
+public interface Sorter {
+	public boolean sort();
+	
+}

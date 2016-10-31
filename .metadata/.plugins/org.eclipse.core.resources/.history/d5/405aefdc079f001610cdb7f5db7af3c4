@@ -1,0 +1,25 @@
+package InterfacePractice;
+
+import javax.swing.JOptionPane;
+
+public class Tester{
+
+	public static void main(String[] args) {
+		new Tester();
+	}
+	
+	public Tester(){
+		String s1 = JOptionPane.showInputDialog("Put a number");
+		String s2 = JOptionPane.showInputDialog("Input another number");
+		
+	}
+	
+	public static String betterString(String s1, String s2, Sorter s){
+		if(s.sort(s1, s2)){
+			return s1;
+		}else{
+			return s2;
+		}
+	}
+	
+}

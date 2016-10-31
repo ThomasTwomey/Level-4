@@ -1,0 +1,17 @@
+package MoreLambda;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		int[] stuff = {3, 2, 1};
+		sortingStuff(stuff, (int[] array) -> {
+			
+		});
+	}
+	
+	public static int[] sortingStuff(int[] arr, Sorter s){
+		s.sort(arr);
+		return arr;
+	}
+
+}

@@ -39,7 +39,7 @@ public class Horses2012 {
 
 	@Test
 	public void testPartA() throws Exception {
-		HorseBarn horseBarn = HorseBarn.createTestBarn();
+		HorseBarn horseBarn = new HorseBarn();
 		assertEquals(0, horseBarn.findHorseSpace("Trigger"));// 0 A horse named Trigger is in space 0.
 		assertEquals(2, horseBarn.findHorseSpace("Silver")); // 2 A horse named Silver is in space 2.
 		assertEquals(-1, horseBarn.findHorseSpace("Coco"));// -1 A horse named Coco is not in the barn
@@ -50,6 +50,7 @@ public class Horses2012 {
 	@Test
 	public void testPartB() throws Exception {
 		// 9. set up the barn
+		HorseBarn horseBarn = new HorseBarn();
 		horseBarn.consolidate();
 		// 10. write asserts that verify that the barn was consolidated (see page 16)
 	}
@@ -80,7 +81,7 @@ class HorseBarn{
 	private Horse[] spaces;
 	public ArrayList<Horse> horses;
 	
-	public HorseBarn(int numSpaces){
+	public HorseBarn(){
 		
 	}
 	
@@ -88,6 +89,12 @@ class HorseBarn{
 		return 1;
 	}
 	public void consolidate(){
+		
+	}
+	public Horse[] getSpaces(){
+		return spaces;
+	}
+	public void createTestBarn(){
 		
 	}
 }
