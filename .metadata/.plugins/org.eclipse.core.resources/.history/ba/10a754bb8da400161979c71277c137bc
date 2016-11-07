@@ -1,0 +1,23 @@
+package ThreadPractice;
+
+public class PrimeNumbers {
+	
+	public static void main(String[] args) {
+		int[] primes = new int[1000];
+		boolean running = true;
+		
+		new Thread(() -> {
+			while(running){
+				
+			}
+	}).start();
+	
+	boolean isPrime(int num){
+		for(int i = 2; i <= num; i++){
+			if(num % i == 0)
+				return false;
+		}
+		return true;
+	}
+
+}

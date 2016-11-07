@@ -1,0 +1,60 @@
+package ThreadPractice;
+
+public class PrimeNumbers {
+	int[] primes = new int[1000];
+	int[] primes2 = new int[1000];
+	boolean running = true;
+	int count = 0;
+	int num = 1;
+	
+	public static void main(String[] args) throws InterruptedException {
+		new PrimeNumbers();
+	}
+	
+	static boolean isPrime(int num){
+		for(int i = 2; i < Math.sqrt(num); i++){
+			if(num % i == 0)
+				return false;
+		}
+		return true;
+	}
+	
+	public PrimeNumbers() throws InterruptedException{
+		Thread t1 = new Thread(() -> {
+			while(running){
+				if(isPrime(num)){
+					primes[count] = num;
+					count++;
+				}
+				if(count == 1000){
+					running = false;
+				}
+				num++;
+			}
+			System.out.println("Thread t1 complete");
+		});
+		
+		Thread t2 = new Thread(() -> {
+			while(running){
+				if(isPrime(num)){
+					primes[count] = num;
+					count++;
+				}
+				if(count == 1000){
+					running = false;
+				}
+				num+=2;
+			}
+			System.out.println("Thread t2 complete");
+		});
+		
+		//t1.start();
+		t2.start();
+		//t1.join();
+		t2.join();
+		
+		for(int i: primes){
+			//System.out.println(i);
+		}
+	}
+}

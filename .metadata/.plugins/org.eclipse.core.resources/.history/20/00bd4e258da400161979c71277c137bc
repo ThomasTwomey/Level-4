@@ -1,0 +1,9 @@
+package ThreadPractice;
+
+public class PrimeNumbers {
+	
+	public static void main(String[] args) {
+		int[] primes = new int[1000];
+	}
+
+}
